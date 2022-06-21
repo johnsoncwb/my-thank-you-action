@@ -8,6 +8,8 @@ async function run() {
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
+  console.log("context", context);
+
   await octoKit.issues.createComment({
     ...context.repo,
     issue_number: pull_request.number,
