@@ -1,0 +1,19 @@
+{
+  "name": "my-thank-you-action",
+  "version": "1.0.0",
+  "description": "github action made by allanJohnson",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsoncwb/my-thank-you-action.git"
+  },
+  "author": "AllanJohnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnsoncwb/my-thank-you-action/issues"
+  },
+  "homepage": "https://github.com/johnsoncwb/my-thank-you-action#readme"
+}
