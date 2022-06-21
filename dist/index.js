@@ -9004,7 +9004,8 @@ async function run() {
   console.log("context", context);
 
   await octoKit.issues.createComment({
-    ...context.repo,
+    owner: pull_request.reposutory.owner.login,
+    repo: pull_request.name,
     issue_number: pull_request.number,
     body: "Thank yout for submit a new Pull Request! we will try to review it as soon as we can",
   });
