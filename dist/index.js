@@ -9001,14 +9001,14 @@ async function run() {
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
-  console.log("context", pull_request.repository.owner);
+  console.log("pull_request", pull_request);
 
-  await octoKit.issues.createComment({
-    owner: pull_request.repository.owner.login,
-    repo: pull_request.name,
-    issue_number: pull_request.number,
-    body: "Thank yout for submit a new Pull Request! we will try to review it as soon as we can",
-  });
+  // await octoKit.issues.createComment({
+  //   owner: pull_request.repository.owner.login,
+  //   repo: pull_request.name,
+  //   issue_number: pull_request.number,
+  //   body: "Thank yout for submit a new Pull Request! we will try to review it as soon as we can",
+  // });
 }
 
 run();
