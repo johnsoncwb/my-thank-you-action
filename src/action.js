@@ -8,7 +8,7 @@ async function run() {
   const { context = {} } = github;
   const { pull_request } = context.payload;
 
-  await octoKit.issues.createComment({
+  await octoKit.rest.issues.createComment({
     owner: pull_request.user.login,
     repo: pull_request.repo.base.name,
     issue_number: pull_request.number,
